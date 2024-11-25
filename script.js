@@ -29,9 +29,9 @@ function playGame() {
         const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
     }
-    console.log(`Game finished ! ${humanScore} vs ${computerScore}`)
+    console.log(`Game finished! ${humanScore} vs ${computerScore}`)
     if (humanScore == 5)
         console.log("The player is the final winner!!!!");
     else
-        console.log("You have been defeated !!!!!");
+        console.log("You have been defeated!!!!!");
 }
