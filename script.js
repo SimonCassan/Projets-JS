@@ -15,27 +15,9 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
         console.log(`It's a draw, both player picked ${humanChoice} - no winner!`);
     }
-    else if (humanChoice == "ROCK") {
-        if (computerChoice == "PAPER") {
-            console.log("The computer won!");
-            computerScore++;
-        } else {
-            console.log("The player won!");
-            humanScore++;
-        }
-    }
-    else if (humanChoice == "PAPER") {
-        if (computerChoice == "ROCK") {
-            console.log("The player won!");
-            humanScore++;
-        } else {
-            console.log("The computer won!");
-            computerScore++;
-        }
-    }
-    else if (computerChoice == "ROCK") {
-        console.log("The player won!")
-        humanScore++;
+    else if ((humanChoice == "ROCK" && computerChoice == "SCISSORS") || (humanChoice == "PAPER" && computerChoice == "ROCK") || (humanChoice == "SCISSORS" && computerChoice == "PAPER")) {
+        console.log("The player won!");
+        humanScore++
     } else {
         console.log("The computer won!");
         computerScore++;
