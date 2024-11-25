@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let humanScore = 0;
+        let computerScore = 0;
+        function getComputerChoice() {
+            const randNb = (Math.floor(Math.random() * 3));
+            const choice = ["Rock", "Paper", "Scissors"];
+            return choice[randNb];
+        }
+
+        function getHumanChoice() {
+            const choice = prompt("Rock, Paper or Scissors?");
+            return choice;
+        }
+
+        function playRound() {
+
+        }
+    </script>
+</body>
+
+</html>
