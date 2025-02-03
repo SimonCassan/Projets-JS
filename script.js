@@ -82,9 +82,9 @@ const attrImgs = {
 const attrLinks = {
     "GitHub": "https://github.com/SimonCassan",
     "Frontend Mentor": "https://www.frontendmentor.io/profile/SimonCassan",
-    "LinkedIn": "https://www.linkedin.com/in/SimonCassan",
-    "BlueSky": "https://bsky.app/profile/simoncassan.bsky.social",
-    "Instagram": "https://www.instagram.com/SimonCassan",
+    "LinkedIn": "#",
+    "BlueSky": "#",
+    "Instagram": "#",
 };
 
 SetImgAttributes("home");
