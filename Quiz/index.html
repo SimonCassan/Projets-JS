@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Interactif</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <article class="quiz-card">
+            <h1>Quiz Javascript</h1>
+            <form class="form" action="#">
+                <fieldset>
+                    <legend></legend>
+                    <div>
+                        <input type="radio" id="question1" name="question" value="question1" required>
+                        <label for="question1"></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="question2" name="question" value="question2">
+                        <label for="question2"></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="question3" name="question" value="question3">
+                        <label for="question3"></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="question4" name="question" value="question4">
+                        <label for="question4"></label>
+                    </div>
+                </fieldset>
+                <input class="btn btnSubmit" type="submit" value="Valider">
+                <button class="btn btnNext" disabled>Suivant</button>
+            </form>
+            <p class="score inactive"></p>
+        </article>
+    </main>
+</body>
+
+</html>

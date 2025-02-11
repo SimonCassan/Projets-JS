@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+
+:root {
+    --bg-primary-color: #fff;
+    --bg-secondary-color: #e7e7e7;
+    --bg-tertiary-color: #d4d4d4;
+    --bg-tertiary-popup-color: #333333;
+    --text-color: #000;
+    --text-invert-color: #fff;
+    --text-secondary-color: #96ad43;
+}
+
+.darkMode {
+    --bg-primary-color: #141414;
+    --bg-secondary-color: #1f1f1f;
+    --bg-tertiary-color: #333333;
+    --bg-tertiary-popup-color: #d3d3d3;
+    --text-color: #fff;
+    --text-invert-color: #000;
+    --text-secondary-color: #c5da7b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary-color);
+    font-family: Inter;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100% - 61px);
+}
+
+header,
+.card {
+    background-color: var(--bg-secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+header a {
+    display: inline-block;
+    padding: 1rem;
+}
+
+header img {
+    width: 25px;
+    height: auto;
+}
+
+.card,
+a {
+    color: var(--text-color);
+}
+
+.card {
+    max-width: 400px;
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.avatar {
+    width: 25%;
+    margin: auto;
+
+}
+
+.btn-social {
+    display: block;
+    padding: 1rem 4rem;
+    background-color: var(--bg-tertiary-color);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.displayLink {
+    position: absolute;
+    display: none;
+    background-color: var(--bg-tertiary-popup-color);
+    color: var(--text-invert-color);
+    border-radius: 0.25rem;
+    padding: 1rem 2rem;
+    bottom: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    z-index: 10;
+}
+
+.displayLink.active {
+    display: initial;
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: var(--text-secondary-color);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+p:not(.displayLink) {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.darkMode header a:first-of-type {
+    filter: invert(100%);
+}
